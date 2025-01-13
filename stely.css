@@ -1,0 +1,246 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2c2c2c; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+.navbar {
+    background-color: #000000; /* Fondo negro */
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
+
+.navbar-brand, .nav-link, footer a {
+    color: #ffffff !important;
+}
+
+.btn-primary {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #737373;
+    border-color: #737373;
+}
+
+/* Hero */
+.hero {
+    background-image: url('img/port_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #ffffff;
+    padding: 100px 0;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Superposición */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Sobre mí */
+.card {
+    background-color: transparent; /* Fondo transparente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    border: 1px solid #d3d3d3; /* Borde gris claro */
+    border-radius: 8px; /* Borde redondeado */
+    box-shadow: 0 4px 6px rgba(0, 0, 255, 0.1); /* Sombra suave azul */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Escala la tarjeta ligeramente */
+    box-shadow: 0 10px 20px rgba(0, 0, 255, 0.3); /* Sombra más pronunciada y azul */
+}
+
+.card-dark {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-dark:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.card-md {
+  margin-top: 0px;
+}
+.back-gris{
+    background-color: #70707047;
+}
+.space-sec {
+    padding-top: 28px;
+    padding-bottom: 20px;
+}
+
+
+/* Estilos para la sección de contacto */
+#contact {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    background-image: url('img/port_3.jpg'); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff; /* Texto blanco para que resalte sobre el fondo */
+}
+
+#contact::before {
+    content: ''; /* Es necesario para crear el pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente */
+    z-index: 1; /* Coloca la capa encima de la imagen pero debajo del contenido */
+}
+
+#contact .container {
+    position: relative; /* Asegura que el contenido esté encima de la capa de opacidad */
+    z-index: 2; /* Coloca el contenido sobre la capa de opacidad */
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.contact-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.contact-buttons a.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.contact-buttons a.btn-success {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.contact-buttons a:hover {
+    opacity: 0.8;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* Estilo para cada ítem */
+.service-item {
+    border: 2px solid transparent; /* Contorno inicial transparente */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.3s, border-color 0.3s, color 0.3s; /* Transición suave */
+    color: #fff; /* Color de texto por defecto (blanco) */
+}
+
+/* Efecto de hover (cuando el ratón pasa por encima) */
+.service-item:hover {
+    background-color: #d1d1d1; /* Fondo gris más oscuro cuando se pasa el ratón */
+    transform: scale(1.05); /* Efecto de aumento */
+    color: #000; /* Texto negro cuando se pasa el ratón */
+}
+
+/* Estilo para cuando el ítem está seleccionado */
+.service-item:active, .service-item.selected {
+    background-color: #d1d1d1; /* Fondo gris cuando se selecciona */
+    border-color: #b0b0b0; /* Contorno gris cuando se selecciona */
+    color: #000; /* Texto negro cuando se selecciona */
+}
+
+/* Estilo para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 767px) {
+    .service-item {
+      
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 50px; /* Forma de cápsula */
+        padding: 8px 20px;
+    }
+}
+
+/* Estilo en hover para pantallas pequeñas */
+@media (max-width: 767px) {
+    .service-item:hover {
+        background-color: #c0c0c0; /* Gris más oscuro para hover */
+        color: #000; /* Texto negro cuando se pasa el ratón en pantallas pequeñas */
+    }
+}
+
+
